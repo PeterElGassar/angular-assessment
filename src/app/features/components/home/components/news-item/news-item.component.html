@@ -1,0 +1,21 @@
+<div class="card card-col">
+    <a href=""><img [src]="artical.urlToImage" (error)="onImgError($event)" class="card-img-top"
+            alt="..."></a>
+    <div class="card-body">
+        <h5 class="card-title">{{artical.title | summaryText:80}}</h5>
+
+        <p class="card-text">
+
+            <fa-icon [icon]="faCalendar" class="me-2"></fa-icon>
+            {{artical.publishedDate}}
+        </p>
+        <div class="row justify-content-between align-content-center w-100 mx-auto align-content-center">
+            <span class="badge rounded-pill bg-secondary">Sports</span>
+
+            <div class="btn-wrapper w-50 w-md-25 text-end">
+                <button class="btn "><fa-icon [icon]="faHeart" class="me-3"></fa-icon></button>
+                <button class="btn "><fa-icon [icon]="faShare" class="me-3"></fa-icon></button>
+            </div>
+        </div>
+    </div>
+</div>

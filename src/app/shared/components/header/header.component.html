@@ -1,93 +1,42 @@
-<header>
-    <section class="container">
-        <div class="content">
+<header class="banner">
+    <div class=" container-fluid bannal">
+        <div class="bannal-content  position-relative">
+            <img class="position-absolute decore-img h-100" src="assets\images\Bannar\Decore.svg" alt="">
+            <div class="row position-relative">
 
-            <div id="logo">
-                <img src="assets/images/navbar/Logo.png" alt="">
-            </div>
+                <div class="slide row" *ngFor="let slide of slides; let i = index"
+                    [class.active]="i === activeSlideIndex">
 
-            <ul class="navigation">
-                <li>
-                    <a routerLink="/home/list">Sell on Shopka</a>
-                </li>
-                <li>
-                    <a routerLink="/home/list">Register</a>
-                </li>
-            </ul>
+                    <div class=" col-11 col-xl-6 h-auto h-xl-100 banner-text-col d-flex flex-column justify-content-start ">
+                        <h2 class="category" [style.color]="'#'+slide.colorCode"> {{slide.category}}</h2>
+                        <h1 class="title">{{slide.title}}</h1>
+                        <p class="brief">
+                            {{slide.brief}}
+                        </p>
+                        <div class="button-container  flex-row">
+                            <a class="btn find-out-btn" [style.background]="'#'+slide.colorCode">Find out more</a>
+                            <a href="#" class="btn play-button">
+                                <span class="play-icon">&#9658;</span> Play Demo
+                            </a>
+                        </div>
 
+                        <div class="timeline">
+                            <ng-container *ngFor="let slide of slides; let i = index">
+                                <a [class.active-circle]="i === activeSlideIndex"
+                                    [style.background]="'#'+slide.colorCode" (click)="switchSilde(i)"
+                                    class="circle"></a>
+                                <div *ngIf="i !== (slides.length -1)" class="line"></div>
+                            </ng-container>
+                        </div>
+                    </div>
 
-        </div>
-        <div class="navigation-action">
-
-            <div class="search-input-wrapper">
-
-                <div class="search-bar">
-                    <button >
-                        <i class="fas fa-search fa-1x "></i>
-                    </button>
-                    <input type="text" class="form-control-search" 
-                        placeholder="useless items on white background">
+                    <div class=" col-12 col-xl-6 h-100 d-none d-xl-block">
+                        <img class="hero-img h-100" [src]="slide.imgUrl" alt="">
+                    </div>
                 </div>
-
-                <a class="consumer" routerLink="/home/list">Consumer Electronics</a>
             </div>
-
-        </div>
-        <div class="cart" >
-
-            <!-- <button (click)="navigate()" [style.visibility]="currentUser ?  'hidden':'visible'"  class="signin-btn">Sign in</button> -->
-            <button class="cart-btn">
-                <span class="cart-count">3 </span>
-                My cart
-            </button>
-            <!-- <h4 *ngIf="currentUser" class="cart-btn">{{currentUser.username}}</h4> -->
-
-            <div class="links">
-
-                <img src="assets/images/navbar/user.png" alt="">
-            </div>
-
-
-            
-        </div>
-        <button class="bars" style="display: none;">
-            <i class="fas fa-bars"></i>
-        </button>
-    </section>
-
-</header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-<div class="right-side">
-    <div class="logo-wrapper">
-
-        <div class="logo">
-            <div class="blue-sky-dot"></div>
         </div>
 
-        <div class="logo-label">
-            ClickTik
-        </div>
     </div>
 
-    <ul>
-        <li><a href="/home">Home</a></li>
-    </ul>
-</div>
-
-<div class="left-side">
-<p>peter</p>
-</div> -->
+</header>

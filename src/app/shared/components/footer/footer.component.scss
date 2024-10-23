@@ -1,0 +1,181 @@
+.footer {
+  padding: 30px 0;
+  width: 100%;
+  height: auto;
+  min-height: 277px;
+}
+
+.footer img {
+  max-width: 150px;
+}
+
+.footer .app-link {
+  max-width: 120px;
+  height: auto;
+}
+
+.footer h6.fw-bold {
+  margin-bottom: 31px;
+  font-size: 1.3rem;
+  color: #000;
+}
+
+.footer li a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+
+.footer .text-muted {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #5E6282;
+}
+.list-unstyled li {
+  margin-bottom: 14px;
+}
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+    position: relative;
+    /* Adjusts the fixed position for small screens */
+  }
+
+  .footer .col-md-2,
+  .footer .col-md-4 {
+    margin-bottom: 30px;
+  }
+}
+
+
+.social-media-icon {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 41px;
+  height: 41px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 20px #0000001A;
+
+}
+
+.copy-right {
+  margin-top: 50px;
+  p{
+    font-size: 0.875rem;
+    color: #5E6282;
+    font-weight: 500;
+  }
+}
+
+h6.app-title{
+  color:#5E6282;
+  font-size: 1.25rem;
+}
+
+.app-btn {
+  margin: 5px;
+  line-height: 1.3333333;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 30px;
+  font-size: 0.75rem;
+}
+
+.app-btn:active:focus,
+.app-btn:focus {
+  outline: 0
+}
+
+.app-btn:focus,
+.app-btn:hover {
+  text-decoration: none;
+  outline: 0
+}
+
+.app-btn:active {
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+}
+
+.btn-google,.btn-apple {
+  color: #fff;
+  background-color: #111;
+  border-color: #000;
+  padding: 15px 16px 5px 40px;
+  position: relative;
+  font-weight: 600;
+  min-width: 122px;
+  text-align: left;
+}
+
+.btn-google:focus,.btn-apple:focus{
+  color: #fff;
+  background-color: #555;
+  border-color: #000;
+
+}
+
+
+
+.btn-google:before {
+  content: "";
+  background-image: url(https://4.bp.blogspot.com/-52U3eP2JDM4/WSkIT1vbUxI/AAAAAAAArQA/iF1BeARv2To-2FGQU7V6UbNPivuv_lccACLcB/s30/nexus2cee_ic_launcher_play_store_new-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  margin-top: -15px
+}
+
+
+.btn-apple:before {
+  content: "";
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/758px-Apple_logo_white.svg.png?20220821122232);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 22px;
+  position: absolute;
+  left: 10px;
+  top: 55%;
+  margin-top: -15px;
+  
+}
+
+
+.btn-google:after {
+  content: "GET IT";
+  position: absolute;
+  top: 5px;
+  left: 40px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.btn-apple:after {
+  content: "Available on";
+  position: absolute;
+  top: 5px;
+  left: 40px;
+  font-size: 10px;
+  font-weight: 400;
+}
