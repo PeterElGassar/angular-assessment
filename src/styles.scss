@@ -1,1 +1,130 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  overflow-x: hidden
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 575.98px) {
+  /*===========smaller than 576px=========== */
+
+  .news-row {
+    padding: 0 15px !important;
+  }
+
+  .col-serve {
+    height: 100%;
+
+    img {
+      height: 100% !important;
+    }
+
+  }
+  .navbar {
+    .inner-nav {
+      margin: 21px 30px !important;
+    }
+  }
+  
+  .bannal {
+    
+    .banner-text-col{
+      padding: 20px 0 !important;
+
+      .timeline{
+        bottom: 12%;
+      }
+    }
+
+    .row{
+      height: calc(85vh - 93.5px);
+    }
+
+    .bannal-content {
+      margin: 0px !important;
+      padding: 0 20px;
+    }
+  
+  }
+  
+}
+ 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /*===========smaller than 576px=========== */
+  .news-row {
+    padding: 0 65px !important;
+  }
+
+  .col-serve {
+    height: 100%;
+
+    img {
+      height: 100% !important;
+    }
+  }
+
+  .bannal-content {
+    margin: 0px !important;
+    padding: 0 20px;
+  }
+
+    .banner-text-col{
+      padding: 20px 0 !important;
+
+      .timeline{
+        bottom: 12% !important;
+      }
+    }
+  
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* /*===========between 768px and 992px /*===========*/
+  .news-row {
+    padding: 0 45px !important;
+  }
+
+  .bannal-content {
+    margin: 0px !important;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* /*=========== between 992px and 1200px /*===========*/
+
+  .news-row {
+    padding: 0 35px !important;
+  }
+
+  .bannal-content {
+    margin: 0px !important;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* /*===========between 1200px and 1400px /*===========*/
+  
+  .news-row {
+    padding: 0 35px !important;
+  }
+
+  .bannal-content {
+    margin: 0px !important;
+    padding: 0 20px;
+  }
+}
